@@ -1,0 +1,252 @@
+%	Use the standard preamble for Beamer slides of all 
+%		statsTeachR modules
+%		(\input, not \include, as \include can't access 
+%		things in higher-level directories since it needs 
+%		write permission there, which it doesn't have; and 
+%		in some settings the preamble may be in a higher-level
+%		directory than the source file.)
+%	This path assumes the preamble is in the parent directory,
+%		modify this if that changes.
+\input{standard_beamer_preamble}
+\usepackage{multicol}
+
+%	The following variables are assumed by the standard preamble:
+%	Global variable containing module name:
+\title{statsTeachR: open resources for teaching statistics}
+%	Global variable containing module shortname:
+%		(Currently unused, may be used in future.)
+\newcommand{\ModuleShortname}{}
+%	Global variable containing author name:
+\author{Nicholas G Reich}
+%	Global variable containing text of license terms:
+\newcommand{\LicenseText}{Made available under the Creative Commons Attribution-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-sa/3.0/deed.en\textunderscore US }
+%	Instructor: optional, can leave blank.
+%		Recommended format: {Instructor: Jane Doe}
+\newcommand{\Instructor}{New England Statistics Symposium}
+%	Course: optional, can leave blank.
+%		Recommended format: {Course: Biostatistics 101}
+\newcommand{\Course}{26 April 2014}
+
+\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=black}
+
+
+
+%	******	Document body begins here	**********************
+
+\begin{document}
+
+%	Title page
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+%	******	Everything through the above line must be placed at
+%		the top of any TeX file using the statsTeachR standard
+%		beamer preamble. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Contributors}
+
+\begin{block}{statsTeachR development}
+\begin{itemize}
+        \item Andrea Foulkes
+        \item Gregory Matthews, Harrel Blatt, Eric Cohen
+        \item 507 Webhouse 
+\end{itemize}
+\end{block}
+
+\begin{block}{For feedback along the way}
+\begin{itemize}
+        \item Nicholas Horton
+        \item Daniel Kaplan
+        \item Andrew Bray
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Defining Open}
+
+\begin{block}{Broadly...}
+\begin{itemize}
+        \item Open access: ``Free and unrestricted online availability'' (\href{http://www.budapestopenaccessinitiative.org/read}{Budapest Open Access Initiative})
+        \item Open access versus open source
+\end{itemize}
+\end{block}
+
+\begin{block}{In academia...}
+\begin{itemize}
+        \item Computing: free to use and/or modify
+        \item Research: free to read and/or publish in
+        \item Teaching: free to use and/or modify
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Open Access for Education: a crowded field}
+
+\includegraphics[width=\linewidth]{openEdLogos}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Open Access for Education: a governmental priority}
+
+\begin{block}{Nov 2013: senate bill introduced}
+\begin{itemize}
+\item Senators Durbin, Franken introduce the \href{http://thomas.loc.gov/cgi-bin/query/z?c113:S.1704:}{Affordable College Textbook Act}
+\item Goal: ``To expand the use of open textbooks in order to achieve savings for students.''
+\end{itemize}
+\end{block}
+
+\begin{block}{January 2014: new NIH funding opportunity}
+\begin{itemize}
+\item \href{http://grants.nih.gov/grants/guide/rfa-files/RFA-HG-14-009.html}{NIH FOA} ``Open Educational Resources for Biomedical Big Data (R25)''
+\item Designed to support ``Curriculum or Methods Development of innovative open educational resources that enhance the ability of the workforce to use and analyze biomedical Big Data.''
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{The Open Access Movement in Statistics}
+
+\begin{block}{Research: statisticians as arbiters of Science}
+\begin{itemize}
+\item The importance of reproducibility
+\item Reproducible research often hinges on open access
+\end{itemize}
+\end{block}
+
+\begin{block}{Teaching: open-access stats textbooks}
+\begin{itemize}
+\item \href{http://www.openintro.org/stat}{OpenIntro}, by David Diez, Christopher Barr, Mine \c{C}etinkaya-Rundel
+\item \href{http://www.math.umass.edu/~lavine/Book/book.html}{Introduction to Statistical Thought}, by Michael Lavine
+\item \href{http://cnx.org/content/col10522/latest/}{Collaborative Statistics}, by Barbara Illowsky, Susan Dean
+\item ... and more listed on \href{http://www.openintro.org/stat/extras.php}{OpenIntro.org}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\includegraphics[width=\linewidth]{FOASLogo.png}
+
+
+{\footnotesize {\bf \em Philosophy} The mission of FOAS is to promote free software, open access publishing, and reproducible research in statistics. We understand free software to be as defined by the Free Software Foundation: possible to run for any purpose, available in source code form, and free to modify and/or redistribute. Open access forums for papers are, for us, defined as those that allow free access to all readers with an internet connection, and that invite contributions from authors without requiring the payment of fees. -- \href{http://www.foastat.org}{FOAStat.org}
+
+%\includegraphics[height=1in]{FOAS.png}
+}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{What is statsTeachR.org?}
+
+\begin{block}{The basics}
+\begin{itemize}
+        \item a new, open-access, online repository with modular lesson plans
+        \item materials targeted at undergraduates and graduates 
+        \item topics: stats, biostats, statistical computing with R
+\end{itemize}
+\end{block}
+
+\begin{block}{Modules}
+\begin{itemize}
+        \item each curricular ``module'' focuses on teaching a particular statistical subject or concept
+        \item can be browsed \`a la carte
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Structure of statsTeachR.org}
+
+\begin{block}{Modules}
+\begin{itemize}
+        \item ...
+\end{itemize}
+\end{block}
+
+\begin{block}{Courses}
+\begin{itemize}
+        \item ...
+\end{itemize}
+\end{block}
+
+\begin{block}{Users}
+\begin{itemize}
+        \item ...
+\end{itemize}
+\end{block}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{statsTeachR.org}
+
+Website tour: \href{http://statsTeachR.org}{statsTeachR.org}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{statsTeachR enables collaborative curriculum development}
+
+\begin{block}{Some ongoing experiments for building curriculum}
+\begin{itemize}
+        \item graduate students are creating modules as final projects in core Biostat classes at UMass
+        \item co-development of materials for similar classes (UMass-Amherst and Columbia Univ) 
+\end{itemize}
+\end{block}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{For discussion . . .}
+
+ \begin{quote}
+\footnotesize
+...the problem with open source textbooks, software, videos and other materials is that they ultimately declare to students, to administrators and to the public that faculty intellectual creations have no market value, and hence, are worthless.  When all information wants to be free, who will employ information producers, be it be lecturers, expositors, musicians, architects, poets?
+\end{quote}
+
+\end{frame}
+
+
+\end{document}
